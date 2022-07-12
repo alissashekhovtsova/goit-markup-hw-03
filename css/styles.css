@@ -254,8 +254,12 @@ img {
 }
 /* О студии */
 
+.about-title {
+  margin-top: 94px;
+}
 .about {
   margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .about-list {
@@ -267,7 +271,11 @@ img {
 /* Команда */
 .team {
   background-color: var(--item-text-color);
-  margin-top: 94px;
+  padding-bottom: 94px;
+}
+
+.members-title {
+  padding-top: 94px;
 }
 
 .team-title {
@@ -287,7 +295,6 @@ img {
 
 .team-possition {
   margin-top: 10px;
-  margin-bottom: 124px;
 }
 
 .team-possition,
@@ -301,6 +308,10 @@ img {
 .footer {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
+}
+
+.main-contacts {
+  padding-top: 20px;
   padding-bottom: 60px;
 }
 
