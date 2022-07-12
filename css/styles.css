@@ -358,10 +358,12 @@ img {
   gap: 8px;
   justify-content: center;
   margin-top: 94px;
+  width: 611px;
 }
 
 .filters-button {
   font-family: inherit;
+  height: 38px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
