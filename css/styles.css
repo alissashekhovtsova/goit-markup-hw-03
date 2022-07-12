@@ -15,8 +15,10 @@
   --secondary-bg-color: #2f303a;
   --hover-button-color: #188ce8;
   --item-text-color: #f5f4fa;
+  --line-photo-color: #d9d9d9;
   --contacts-text-color: rgba(255, 255, 255, 0.6);
   --line-color: #ececec;
+  --conteiner-color: #eeeeee;
   --card-gap: 30px;
   --card-items: 4;
 }
@@ -74,7 +76,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  border-bottom: var(--line-color);
+  border-bottom: 1px solid var(--line-color);
 }
 
 .header-conteiner {
@@ -232,7 +234,7 @@ img {
   margin-top: 94px;
 }
 
-.importance-main-title {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -266,6 +268,18 @@ img {
   margin-top: 50px;
   --card-items: 3;
   margin-right: 30px;
+}
+
+.about-line {
+  height: 92px;
+  left: 215px;
+  top: 1263px;
+  background: var(--line-photo-color);
+  margin-top: -92px;
+  --card-items: 3;
+  margin-left: 30px;
+  border: 1px solid var(--secondary-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Команда */
@@ -339,14 +353,11 @@ img {
 /* фильтры */
 
 .filters-list {
-  --card-items: 5;
-  margin-top: 94px;
-  margin-bottom: 34px;
-  justify-content: center;
-  justify-content: space-between;
-  max-width: 611px;
   display: flex;
-  align-items: center;
+  margin: auto;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 94px;
 }
 
 .filters-button {
@@ -358,12 +369,35 @@ img {
   color: var(--title-text-color);
   background-color: var(--item-text-color);
   cursor: pointer;
-  margin-right: 5px;
+  display: block;
+  border-radius: 4px;
+  border: 0;
 }
+
 .filters-button:hover,
 .filters-button:focus {
   color: var(--logo-text-color);
   background-color: var(--accent-text-color);
+}
+
+.portfolio-wrapper {
+  width: 370px;
+  border-top: none;
+  padding: 20px 24px;
+  background: var(--logo-text-color);
+  border: 1px solid var(--conteiner-color);
+}
+.projects-list {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.projects-item {
+  max-width: 370px;
+  flex-basis: 370px;
 }
 
 .projects-title {
@@ -372,13 +406,10 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 
 .projects-text {
   font-size: 16px;
   line-height: 1.88;
-}
-
-.projects-list {
-  --card-items: 9;
 }
