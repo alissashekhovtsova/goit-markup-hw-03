@@ -318,18 +318,20 @@ img {
 .footer-info:focus {
   color: var(--primary-bg-color);
 }
-
-.main-contacts {
-  margin-top: 20px;
+.logo-footer {
+  margin-bottom: 20px;
 }
 
 .footer-adress {
   color: var(--logo-text-color);
+  margin-bottom: 9px;
 }
 
+.footer-email {
+  margin-bottom: 9px;
+}
 .footer-info {
   color: var(--contacts-text-color);
-  margin-top: 9px;
 }
 
 .main-contacts {
